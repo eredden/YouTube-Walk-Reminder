@@ -1,0 +1,18 @@
+{
+  "description": "Adds a walk reminder prompt to all webpages from www.youtube.com.",
+  "manifest_version": 2,
+  "name": "YouTube Walk Reminder",
+  "version": "1.0",
+  "homepage_url": "https://github.com/eredden",
+  "icons": {
+    "48": "icons/smart-display-48.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["source.js"]
+    }
+  ]
+
+}
